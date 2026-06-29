@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Urban Spice | Fine Dining Reimagined</title>
+    <meta
+      name="description"
+      content="The Urban Spice is a premium fine dining restaurant experience with handcrafted dishes and unforgettable ambience."
+    />
+    <link rel="preload" href="assets/hero-ambience.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+
+    <div class="loader" data-loader>
+      <div class="loader__glass">
+        <span class="loader__mark">US</span>
+        <div class="loader__bar"><span></span></div>
+        <p>The Urban Spice</p>
+      </div>
+    </div>
+
+    <header class="nav" data-nav>
+      <a class="brand magnetic" href="#home" aria-label="The Urban Spice home">
+        <span>The Urban</span>
+        <strong>Spice</strong>
+      </a>
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#chef">Chef</a>
+        <a href="#reserve">Reserve</a>
+      </nav>
+      <a class="nav__cta magnetic" href="#reserve">Book Now</a>
+    </header>
+
+    <main>
+      <section class="hero section" id="home" data-section="hero">
+        <img class="hero__image parallax-img" src="assets/hero-ambience.png" alt="Luxury restaurant ambience at night" />
+        <div class="hero__shade"></div>
+        <div class="hero__orb hero__orb--one"></div>
+        <div class="hero__orb hero__orb--two"></div>
+
+        <div class="hero__content">
+          <p class="eyebrow reveal blur-in">The Urban Spice</p>
+          <h1 class="split-title" data-split>
+            <span>Fine Dining</span>
+            <span>Reimagined</span>
+          </h1>
+          <p class="hero__copy reveal slide-up">
+            Premium dining experience with handcrafted dishes and unforgettable ambience.
+          </p>
+          <div class="hero__actions reveal stagger">
+            <a class="btn btn--primary magnetic" href="#reserve">Reserve Table</a>
+            <a class="btn btn--ghost magnetic" href="#menu">Explore Menu</a>
+          </div>
+        </div>
+
+        <aside class="review-card review-card--top glass float-card" data-depth="18">
+          <span class="stars">★★★★★</span>
+          <strong>4.9 / 5</strong>
+          <p>Private tasting menus crafted around spice, smoke, and season.</p>
+        </aside>
+        <aside class="review-card review-card--bottom glass float-card" data-depth="-12">
+          <span>Chef's Table</span>
+          <strong>12 seats nightly</strong>
+          <p>An intimate view into the fire, plating, and final flourish.</p>
+        </aside>
+
+        <a class="scroll-indicator" href="#about" aria-label="Scroll to about section">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="about section section--pad" id="about">
+        <div class="section__kicker reveal clip-in">About Restaurant</div>
+        <div class="about__grid">
+          <div class="about__media reveal image-wipe">
+            <img src="assets/about-kitchen.png" alt="Open kitchen with luxury plating details" />
+          </div>
+          <div class="about__card glass reveal scale-soft">
+            <p class="eyebrow">Experience Fine Dining Like Never Before</p>
+            <h2>Where urban rhythm meets old-world spice craft.</h2>
+            <p>
+              The Urban Spice is built for evenings that linger. Our tasting-led kitchen pairs
+              slow-roasted technique with modern plating, rare spices, and a room designed around
+              glow, texture, and conversation.
+            </p>
+            <div class="about__stats">
+              <div>
+                <strong data-counter="18">0</strong>
+                <span>Signature plates</span>
+              </div>
+              <div>
+                <strong data-counter="42">0</strong>
+                <span>Curated wines</span>
+              </div>
+              <div>
+                <strong data-counter="120">0</strong>
+                <span>Seats nightly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dishes section section--pad" id="menu">
+        <div class="section__header">
+          <p class="section__kicker reveal rotate-in">Featured Dishes</p>
+          <h2 class="reveal slide-left">Plates with theatre, texture, and restraint.</h2>
+        </div>
+        <div class="dish-grid">
+          <article class="dish-card glass reveal dish-rise">
+            <div class="dish-card__image">
+              <img src="assets/dish-signature.png" alt="Signature Indian fusion dish on a black ceramic plate" />
+            </div>
+            <div class="dish-card__content">
+              <span>Signature</span>
+              <h3>Smoked Saffron Ember</h3>
+              <p>Tandoor-charred seasonal main, saffron foam, chili oil, and herb ash.</p>
+              <strong>Chef's Selection</strong>
+            </div>
+          </article>
+          <article class="dish-card dish-card--tall glass reveal dish-rise">
+            <div class="dish-card__image">
+              <img src="assets/dish-dessert.png" alt="Luxury dessert with cocktail pairing on black marble" />
+            </div>
+            <div class="dish-card__content">
+              <span>Dessert Pairing</span>
+              <h3>Cardamom Velvet</h3>
+              <p>Smoked cardamom cream, pistachio crunch, rose gel, and a jewel-toned pour.</p>
+              <strong>After Dark</strong>
+            </div>
+          </article>
+          <article class="menu-note reveal liquid-pop">
+            <span>Tonight's Mood</span>
+            <h3>Seven-course spice trail with tableside finishing.</h3>
+            <a class="text-link magnetic" href="#reserve">Reserve the tasting</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="chef section section--pad" id="chef">
+        <div class="chef__panel glass">
+          <div class="chef__image reveal chef-mask">
+            <img src="assets/chef-portrait.png" alt="Executive chef in a premium open kitchen" />
+          </div>
+          <div class="chef__story reveal text-cascade">
+            <p class="section__kicker">Chef Section</p>
+            <h2>A kitchen led by fire, memory, and precision.</h2>
+            <p>
+              Our executive chef reworks Indian spice traditions through a modern tasting lens:
+              smoked aromatics, polished reductions, fermented brightness, and plating that moves
+              with the room's low amber light.
+            </p>
+            <div class="chef__signature">
+              <span></span>
+              <p>Chef Armaan Rao</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why section section--pad">
+        <div class="section__header section__header--center">
+          <p class="section__kicker reveal flip-up">Why Choose Us</p>
+          <h2 class="reveal blur-in">Designed for the table people remember.</h2>
+        </div>
+        <div class="why__grid">
+          <article class="why-card glass reveal tilt-in">
+            <span class="icon icon--flame"></span>
+            <h3>Live Fire Kitchen</h3>
+            <p>Charcoal, smoke, and tableside finishing bring movement to every course.</p>
+          </article>
+          <article class="why-card glass reveal tilt-in">
+            <span class="icon icon--gem"></span>
+            <h3>Luxury Ingredients</h3>
+            <p>Seasonal produce, rare spices, premium cuts, and exacting technique.</p>
+          </article>
+          <article class="why-card glass reveal tilt-in">
+            <span class="icon icon--glass"></span>
+            <h3>Ambient Design</h3>
+            <p>A dark, intimate room shaped by brass, marble, candlelight, and city glow.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery section section--pad">
+        <div class="section__header">
+          <p class="section__kicker reveal clip-in">Gallery</p>
+          <h2 class="reveal slide-right">A visual rhythm of spice, glass, and glow.</h2>
+        </div>
+        <div class="masonry">
+          <figure class="gallery-item gallery-item--tall reveal gallery-drift">
+            <img src="assets/gallery-table.png" alt="Candlelit table with cocktails and plated dishes" />
+            <figcaption>Night Table</figcaption>
+          </figure>
+          <figure class="gallery-item reveal gallery-drift">
+            <img src="assets/dish-signature.png" alt="Signature dish close-up" />
+            <figcaption>Ember Plate</figcaption>
+          </figure>
+          <figure class="gallery-item gallery-item--wide reveal gallery-drift">
+            <img src="assets/hero-ambience.png" alt="Luxury restaurant room" />
+            <figcaption>Urban Glow</figcaption>
+          </figure>
+          <figure class="gallery-item reveal gallery-drift">
+            <img src="assets/dish-dessert.png" alt="Dessert and cocktail pairing" />
+            <figcaption>After Dark</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="testimonials section section--pad">
+        <div class="section__header section__header--center">
+          <p class="section__kicker reveal rotate-in">Testimonials</p>
+          <h2 class="reveal scale-soft">What the room says after dessert.</h2>
+        </div>
+        <div class="testimonial-shell">
+          <div class="testimonial-track" data-testimonial-track>
+            <article class="testimonial-card glass">
+              <p>"The kind of dinner you book for a celebration and end up talking about for months."</p>
+              <strong>Rhea Kapoor</strong>
+              <span>Founder, Maison Studio</span>
+            </article>
+            <article class="testimonial-card glass">
+              <p>"Every plate felt edited, confident, and deeply luxurious without trying too hard."</p>
+              <strong>Aarav Mehta</strong>
+              <span>Hospitality Investor</span>
+            </article>
+            <article class="testimonial-card glass">
+              <p>"The ambience hits first. Then the food makes you realize the room was only the beginning."</p>
+              <strong>Nisha Sen</strong>
+              <span>Food Critic</span>
+            </article>
+          </div>
+          <div class="testimonial-dots" data-testimonial-dots aria-label="Testimonial controls"></div>
+        </div>
+      </section>
+
+      <section class="reservation section section--pad" id="reserve">
+        <div class="reservation__wrap glass reveal reservation-glow">
+          <div>
+            <p class="section__kicker">Reservation</p>
+            <h2>Secure the evening before the best tables disappear.</h2>
+            <p>Private dining, chef's table, anniversaries, tastings, and late-night celebrations.</p>
+          </div>
+          <form class="booking" aria-label="Reservation form">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Date</span>
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              <span>Guests</span>
+              <select name="guests" required>
+                <option>2 Guests</option>
+                <option>4 Guests</option>
+                <option>6 Guests</option>
+                <option>Private Dining</option>
+              </select>
+            </label>
+            <label>
+              <span>Time</span>
+              <select name="time" required>
+                <option>7:00 PM</option>
+                <option>8:30 PM</option>
+                <option>10:00 PM</option>
+              </select>
+            </label>
+            <button class="btn btn--primary magnetic" type="submit">Reserve Table</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact section section--pad" id="contact">
+        <div class="contact__grid">
+          <div class="contact__details reveal slide-up">
+            <p class="section__kicker">Contact</p>
+            <h2>Find us where the city begins to glow.</h2>
+            <div class="contact__actions">
+              <a class="contact-pill magnetic" href="tel:+919876543210">Call</a>
+              <a class="contact-pill magnetic" href="https://wa.me/919876543210" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a class="contact-pill magnetic" href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
+          </div>
+          <div class="map glass reveal map-reveal">
+            <iframe
+              title="The Urban Spice location on Google Maps"
+              src="https://www.google.com/maps?q=Mumbai%20fine%20dining&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>The Urban Spice</strong>
+        <span>Experience Fine Dining Like Never Before</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#reserve">Reserve</a>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
